@@ -35,7 +35,11 @@ formulario.onsubmit = (e) =>{
         window.location.href="./html/user.html"
         
     }else{
-        window.alert("USUARIO NO EXISTE EN EL SISTEMA")
+        Swal.fire(
+            'Usuario no existe',
+            'vuelve a ingresar un usuario correcto',
+            'error'
+          )
     }
 }
 
