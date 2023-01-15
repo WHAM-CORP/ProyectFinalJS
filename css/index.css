@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.contenedor-loguin{
+    border: 5px solid blue;
+    height: 350px;
+    width: 400px; 
+    background-color: blue;
+}
+.contenedor-loguin .titulo{
+    text-align: center;
+    margin: 20px;
+    color:tomato;
+    font-family: 'Merienda One', cursive;
+}
+
+.datos label,input{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.datos label{
+    font-size: 1.5rem;
+    margin: 10px;
+    color: white;
+}
+.datos input{
+    width: 75%;
+    font-size: 1rem;
+}
+.boton input{
+    margin-top: 40px;
+    width: 50%;
+    font-size: 1rem;
+    color:crimson;
+}

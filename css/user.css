@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.butonCerrarUser {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    display: block;
+    position: relative;
+}
+.contenido{
+    width: 80%;
+    margin: auto;
+}
+
+.butonCerrarUser button {
+    position: absolute;
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 1.2rem;
+    right: 10px;
+}
+
+.card_prod {
+    border: 3px solid black;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    margin: 20px;
+    color: brown;
+    font-size: 3rem;
+}
+
+.contenedor_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_prod {
+    width: 350px;
+}
+
+.prod_ima {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    margin: 10px;
+
+}
+
+.prod_ima:hover {
+    transform: scale(1.03);
+}
+
+.botones {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.botones:hover {
+    background-color: white;
+    color: brown;
+    transform: scale(1.2);
+    font-family: weight;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.menu li:hover{
+    background-color: white;
+
+}
+.menu li a:hover{
+    color: black;
+
+}
+.titulo_real{
+    margin-left: 30px;
+    position: absolute;
+    color: darkred;
+    font-size: 2.5rem;
+}
+.container-foot{
+    display: flex;
+    background-color: black;
+    align-items: flex-start;
+    
+}
+.column--33{
+    padding: 30px;
+    width: 33%;
+    color: white;
+}
+.copy{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.enlaces a{
+    color: white;
+}
