@@ -37,15 +37,15 @@ const traerDatosAlContainer = (array) => {
 }
 
 //funcion para crear el carrito de compras
-let compras=[]
+let compras = []
 
-function carritoAdd(array){
-    const botones=document.querySelectorAll(".botones")
+function carritoAdd(array) {
+    const botones = document.querySelectorAll(".botones")
 
-    botones.forEach((element)=>{
-        element.onclick=()=>{
+    botones.forEach((element) => {
+        element.onclick = () => {
             const id = element.id.slice(5)
-            const filtro=array.find((elem)=>{
+            const filtro = array.find((elem) => {
                 return elem.id == Number(id)
             })
             compras.push(filtro)
@@ -53,9 +53,9 @@ function carritoAdd(array){
                 'Agregado al carrito correctamente',
                 'Gracias por Elegir',
                 'success'
-              )
+            )
 
-            localStorage.setItem("carrito",JSON.stringify(compras))
+            localStorage.setItem("carrito", JSON.stringify(compras))
         }
     })
 }
@@ -67,7 +67,7 @@ compras = productosElegidos || []
 fetch('https://fakestoreapi.com/products')
     .then(res => res.json())
     .then((data) => {
-        const dataProducts = data 
+        const dataProducts = data
         traerDatosAlContainer(dataProducts)
         carritoAdd(dataProducts)
     })

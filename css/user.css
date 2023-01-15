@@ -11,7 +11,8 @@
     display: block;
     position: relative;
 }
-.contenido{
+
+.contenido {
     width: 80%;
     margin: auto;
 }
@@ -91,41 +92,48 @@
     color: white;
     cursor: pointer;
 }
-.menu li a{
+
+.menu li a {
     text-decoration: none;
     color: white;
 }
-.menu li:hover{
+
+.menu li:hover {
     background-color: white;
 
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: black;
 
 }
-.titulo_real{
+
+.titulo_real {
     margin-left: 30px;
     position: absolute;
     color: darkred;
     font-size: 2.5rem;
 }
-.container-foot{
+
+.container-foot {
     display: flex;
     background-color: black;
     align-items: flex-start;
-    
+
 }
-.column--33{
+
+.column--33 {
     padding: 30px;
     width: 33%;
     color: white;
 }
-.copy{
+
+.copy {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.enlaces a{
+.enlaces a {
     color: white;
 }

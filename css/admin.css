@@ -1,41 +1,46 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.butonCerrar{
+.butonCerrar {
     width: 100%;
     height: 50px;
     background-color: aqua;
     display: block;
     position: relative;
 }
-.butonCerrar button{
+
+.butonCerrar button {
     position: absolute;
     margin: 10px;
     width: 150px;
     height: 30px;
     font-size: 1.2rem;
     right: 10px;
-    
+
 }
-.tabla{
+
+.tabla {
     margin: auto;
     border: 1px solid black;
     width: 70%;
     text-align: center;
     padding: 25px;
 }
-.container-admin h1{
+
+.container-admin h1 {
     text-align: center;
     font-size: 3rem;
     color: brown;
 }
-.tabla th{
+
+.tabla th {
     background-color: brown;
     color: white;
 }
-.tabla td{
+
+.tabla td {
     padding: 10px;
 }

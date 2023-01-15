@@ -1,45 +1,45 @@
-const usuario=document.querySelector("#user")
-const password=document.querySelector("#pass")
-const formulario=document.querySelector(".loguin")
-const contenLoguin=document.querySelector(".contenedor-loguin")
+const usuario = document.querySelector("#user")
+const password = document.querySelector("#pass")
+const formulario = document.querySelector(".loguin")
+const contenLoguin = document.querySelector(".contenedor-loguin")
 
-const usuarioAdmin={
-    id:"001",
-    user:"Administrador",
-    pass:"admin2022"
+const usuarioAdmin = {
+    id: "001",
+    user: "Administrador",
+    pass: "admin2023"
 
 }
-const usuarioNormal={
-    id:"001",
-    user:"Usuario",
-    pass:"user2022"
+const usuarioNormal = {
+    id: "001",
+    user: "Usuario",
+    pass: "user2023"
 }
 
-const subirAlLS = (clave ,valor)=>{
-    localStorage.setItem(clave,JSON.stringify(valor))
+const subirAlLS = (clave, valor) => {
+    localStorage.setItem(clave, JSON.stringify(valor))
 }
-const elementDelLs =(clave)=>{
-    return JSON.parse(localStorage.getItem(clave)) 
+const elementDelLs = (clave) => {
+    return JSON.parse(localStorage.getItem(clave))
 }
 
-formulario.onsubmit = (e) =>{
+formulario.onsubmit = (e) => {
     e.preventDefault()
-    if(usuario.value === usuarioAdmin.user && password.value===usuarioAdmin.pass){
-        subirAlLS("UserAdmin",true)
-        contenLoguin.style.display="none"
-        window.location.href="./html/admin.html"
+    if (usuario.value === usuarioAdmin.user && password.value === usuarioAdmin.pass) {
+        subirAlLS("UserAdmin", true)
+        contenLoguin.style.display = "none"
+        window.location.href = "./html/admin.html"
 
-    }else if(usuario.value===usuarioNormal.user && password.value===usuarioNormal.pass){
-        subirAlLS("UserNormal",true)
-        contenLoguin.style.display="none"
-        window.location.href="./html/user.html"
-        
-    }else{
+    } else if (usuario.value === usuarioNormal.user && password.value === usuarioNormal.pass) {
+        subirAlLS("UserNormal", true)
+        contenLoguin.style.display = "none"
+        window.location.href = "./html/user.html"
+
+    } else {
         Swal.fire(
-            'Usuario no existe',
-            'vuelve a ingresar un usuario correcto',
+            'Usuario No Existe En El Sistema',
+            'vuelve a ingresar un usuario correcto por favor',
             'error'
-          )
+        )
     }
 }
 

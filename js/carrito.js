@@ -23,23 +23,23 @@ const cargarCarrito = (array) => {
 cargarCarrito(infoLs || [])
 
 
-function borrarVenta(array){
-    const botones=document.querySelectorAll(".botones")
+function borrarVenta(array) {
+    const botones = document.querySelectorAll(".botones")
 
-    botones.forEach((element)=>{
-        element.onclick=()=>{
+    botones.forEach((element) => {
+        element.onclick = () => {
             const id = element.id.slice(5)
-            const filtro=array.filter((elem)=>{
+            const filtro = array.filter((elem) => {
                 return elem.id != Number(id)
             })
-            infoLs=filtro
-            localStorage.setItem("carrito",JSON.stringify(infoLs))
+            infoLs = filtro
+            localStorage.setItem("carrito", JSON.stringify(infoLs))
             cargarCarrito(infoLs)
             Swal.fire(
                 'Eliminado del carrito correctamente',
                 'Gracias por Elegir',
                 'success'
-              )
+            )
             borrarVenta(infoLs)
 
         }
